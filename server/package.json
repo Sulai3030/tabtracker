@@ -1,10 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
-    "lint": "./node_modules/.bin/eslint **/*.js",
+    "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
+    "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js  --fix",
     "seed": "node seed"
   },
@@ -33,6 +34,5 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint": "^4.6.0",
     "nodemon": "^1.11.0"
-  },
-  "description": ""
+  }
 }
