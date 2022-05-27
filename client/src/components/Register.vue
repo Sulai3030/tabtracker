@@ -2,22 +2,26 @@
   <div>
    <h1>Register</h1>
 
-    <input
-    type="'email"
-    name="email"
-    v-model="email"
-    placeholder="email" />
-    <br />
-    <input
-    type="password"
-    name="password"
-    v-model="password"
-    placeholder="password" />
-    <br/>
+    <form>
+      <input
+      type="email"
+      name="email"
+      autocomplete="on"
+      v-model="email"
+      placeholder="email" />
+      <br />
+      <input
+      type="password"
+      name="password"
+      autocomplete="on"
+      v-model="password"
+      placeholder="password" />
+      <br/>
     <button
       onclick="register">
         Register
     </button>
+    </form>
   </div>
 </template>
 
